@@ -45,13 +45,12 @@ ul, li, ol {
 /* page css*/
 .wrapper {
 	background: rgb(236,236,236);
-	padding: 20px 20px 20px 0px;
 	margin-top: 40px;
-	margin-bottom: 40px;
+	display: flex;
+	padding: 40px 20px 40px 0px;
 }
 .wrapper .aside {
 	width: 280px;
-	height: 2629;
 }
 .aside .user {
 	text-align: center;
@@ -159,21 +158,17 @@ ul, li, ol {
 }
 .wrapper .content {
 	background: #fff;
-	width: 900px;
-	height: 100%;
 	padding: 50px;
 }
 .content .introduce-self {
-	
+	display: flex;
 }
 .content .introduce-self > img {
 	width: 100px;
-	float: left;
+	height: 122px;
 }
 .content .introduce-self > p {
-	    float: left;
     margin-left: 30px;
-    width: 670px;
     line-height: 28px;
 }
 .content .education {
@@ -188,18 +183,21 @@ ul, li, ol {
 .content .education > p > span {
 	font-size: 16px;
 }
-
+.content .education .e-list {
+	display: flex;
+}
 .content .education .e-list .e-time {
-	float: left;
 	font: 14px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
 	color: #FFFFFF;
-	padding: 4px 10px;
+	padding: 0px 10px;
 	margin-right: 15px;
 	background: #000;
 	border-radius: 40px;
+	height: 30px;
+	line-height: 30px;
+	width: 140px;
 }
 .content .education .e-list .e-info {
-	float: left;
 	padding-left: 20px;
 	border-left: 1px solid rgb(218,218,218);
 	padding-bottom: 40px;
@@ -231,13 +229,11 @@ ul, li, ol {
 	padding-bottom: 4px;
 }
 .content .education .e-list .e-info .frame-list {
-	float: left;
 	font-size: 12px;
 	color: #fff;
 	padding: 4px 6px;
 	margin-left: 6px;
 	border-radius: 4px;
-	margin-bottom: 4px;
 	
 }
 .pre-img {
@@ -270,26 +266,42 @@ ul, li, ol {
 	margin-left: 0px;
 }
 .content .education .e-list .e-info .work-desc {
-	width: 622px;
 	line-height: 28px;
 	}
 .content .education .e-list .e-info .work-desc > span {
 	color: #666;
 	font-weight: 600;
 }
-.content .education .e-list .e-info > ul {
+.content .education .e-list .e-info ul {
+	
 	margin: 8px 0px 0px 14px;
-	width: 600px;
+}
+.content .education .e-list .e-info .list-1 {
+	display: flex;
 }
 .languages .evaluate {
 	color: #555;
 	line-height: 26px;
 }
+.author {
+	display: flex;
+	margin-left: 14px;
+}
+.author > a {
+	cursor: pointer;
+	color: rgb(135,186,248);
+	margin-left: 14px;
+	line-height: 32px;
+}
+.author > a:first-child {
+	margin-left: 0;
+}
 
-
-
-
-
+@print {
+	.wrapper {
+		margin-left: 0;
+	}
+}
 
 
 
