@@ -1,0 +1,321 @@
+
+/*css reset*/ 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+ body {
+	font-size: 15px;
+	color: #333;
+}
+ul, li, ol {
+	list-style-type: none;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.icon {
+       width: 20px; height: 20px;
+       vertical-align: -0.15em;
+       fill: rgb(70,190,169);
+       overflow: hidden;
+    }
+
+/*common css  */
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.layout {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+
+/* page css*/
+.wrapper {
+	background: rgb(236,236,236);
+	padding: 20px 20px 20px 0px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.wrapper .aside {
+	width: 280px;
+	height: 2629;
+}
+.aside .user {
+	text-align: center;
+	margin-top: 35px;
+}
+.aside .user > .name {
+	font: 48px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+}
+.aside .user > .name::after {
+	content: '';
+	display: block;
+	width: 60px;
+	border-top: 1px solid #d6d6d6;
+	margin: 15px auto 18px auto;
+}
+.aside .user > .position::after {
+	content: '';
+	display: block;
+	margin-top: 25px;
+	border-top: 20px solid #d6d6d6;
+	border-bottom: 20px solid transparent;
+	border-right: 120px solid #d6d6d6;
+	border-left: 120px solid transparent;
+	
+}
+.aside .p-information,
+.aside .languages {
+	margin: 40px 20px 48px 20px;
+}
+.aside .p-information ul li {
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	border-bottom: 1px solid #d6d6d6;
+	
+}
+.aside .p-information ul li > span {
+	padding: 0px 12px;
+}
+.aside .p-information ul li > p {
+	padding: 12px 15px;
+	border-left: 1px solid #d6d6d6;
+} 
+.aside .my-skills {
+	background: rgb(70,190,169);
+	padding: 24px 20px 20px 20px;
+	color: #fff;
+}
+.aside .my-skills > p,
+.aside .languages > .title,
+.aside .p-information > p {
+	font-size: 24px;
+	font-weight: blod;
+}
+.aside .my-skills dl {
+	margin: 30px 0px;
+	
+}
+.aside .my-skills dt {
+	margin-top: 25px;
+}
+.aside .my-skills dd {
+	height: 3px;
+	background: #74c5b8;
+	margin-top: 12px;
+	border-radius: 4px;
+}
+.aside .my-skills dd .mastery {
+	display: block;
+	height: 3px;
+	background: #fff;
+	border-radius: 4px;
+	
+}
+.aside .languages > .title {
+	color: rgb(70,190,169);
+	margin-bottom: 18px;
+}
+.aside .languages dl {
+	padding: 18px 0px;
+	border-bottom: 1px solid rgb(221,221,224);
+}
+.aside .languages dt {
+	color: #000;
+	float: left;
+}
+.aside .languages dd {
+	width: 100px;
+	height: 4px;
+	background: rgb(218,214,214);
+	border-radius: 4px;
+	float: right;
+	margin-top: 9px;
+}
+.aside .languages dd span {
+	display: block;
+	background: #74c5b8;
+	height: 4px;
+	border-radius: 4px;
+}
+
+.aside .p-information > p {
+	color: rgb(70,190,169);
+	margin-bottom: 18px;
+}
+.wrapper .content {
+	background: #fff;
+	width: 900px;
+	height: 100%;
+	padding: 50px;
+}
+.content .introduce-self {
+	
+}
+.content .introduce-self > img {
+	width: 100px;
+	float: left;
+}
+.content .introduce-self > p {
+	    float: left;
+    margin-left: 30px;
+    width: 670px;
+    line-height: 28px;
+}
+.content .education {
+	margin-top: 40px;
+}
+.content .education > p {
+	font-size: 36px;
+	color: #ececec;
+	text-align: center;
+	margin-bottom: 40px;
+}
+.content .education > p > span {
+	font-size: 16px;
+}
+
+.content .education .e-list .e-time {
+	float: left;
+	font: 14px/1.5 SimSun, STKaiti, "Microsoft YaHei", SimHei, Helvetica, Arial;
+	color: #FFFFFF;
+	padding: 4px 10px;
+	margin-right: 15px;
+	background: #000;
+	border-radius: 40px;
+}
+.content .education .e-list .e-info {
+	float: left;
+	padding-left: 20px;
+	border-left: 1px solid rgb(218,218,218);
+	padding-bottom: 40px;
+}
+.content .education .e-list .e-info > h3 {
+	    font-size: 20px;
+    color: #000;
+    line-height: 24px;
+    font-weight: 500;
+}
+.content .education .e-list .e-info > h3::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid rgb(70,190,169);
+	position: relative;
+	left: -26px;
+	background: #FFFFFF;
+}
+.content .education .e-list .e-info > h3 > span {
+	margin-left: 12px;
+	font-size: 14px;
+	color: #797979;
+}
+.content .education .e-list .e-info > p {
+	margin: 10px 0px 0px 14px;
+	padding-bottom: 4px;
+}
+.content .education .e-list .e-info .frame-list {
+	float: left;
+	font-size: 12px;
+	color: #fff;
+	padding: 4px 6px;
+	margin-left: 6px;
+	border-radius: 4px;
+	margin-bottom: 4px;
+	
+}
+.pre-img {
+	padding-left: 14px;
+	background: url(../img/151515.png) left no-repeat;
+}
+.pre-img-1 {
+	padding-left: 14px;
+	background: url(../img/151515.png) left 10px no-repeat;
+}
+.education .e-list .e-info .frame-list.frame-1 {
+	background: rgb(235,98,54);
+}
+.education .e-list .e-info .frame-list.frame-2 {
+	background: rgb(244,154,62);
+}
+.education .e-list .e-info .frame-list.frame-3 {
+	background: rgb(253,219,75);
+}
+.education .e-list .e-info .frame-list.frame-4 {
+	background: rgb(126,187,49);
+}
+.education .e-list .e-info .frame-list.frame-5 {
+	background: rgb(144,148,214);
+}
+.education .e-list .e-info .frame-list.frame-6 {
+	background: rgb(171,177,189);
+}
+.content .education .e-list .e-info .frame-list:first-child {
+	margin-left: 0px;
+}
+.content .education .e-list .e-info .work-desc {
+	width: 622px;
+	line-height: 28px;
+	}
+.content .education .e-list .e-info .work-desc > span {
+	color: #666;
+	font-weight: 600;
+}
+.content .education .e-list .e-info > ul {
+	margin: 8px 0px 0px 14px;
+	width: 600px;
+}
+.languages .evaluate {
+	color: #555;
+	line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
