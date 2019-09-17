@@ -44,10 +44,11 @@ ul, li, ol {
 
 /* page css*/
 .wrapper {
-	background: rgb(236,236,236);
-	margin-top: 40px;
+	background-color: #ececec;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 40px;
 	display: flex;
-	padding: 40px 20px 40px 0px;
 }
 .wrapper .aside {
 	width: 280px;
@@ -157,8 +158,9 @@ ul, li, ol {
 	margin-bottom: 18px;
 }
 .wrapper .content {
-	background: #fff;
-	padding: 50px;
+    background: #fff;
+    padding: 40px;
+    margin-right: 20px;
 }
 .content .introduce-self {
 	display: flex;
